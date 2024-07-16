@@ -1,0 +1,4 @@
+[submodule "components/loadprogs"]
+	path = components/loadprogs
+	url = git@gitlab.science.gc.ca:storm-surge-modelling/loadprogs_python.git
+	branch = mod_txt

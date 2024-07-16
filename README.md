@@ -14,12 +14,14 @@ Validation of surge models in the SurgeMIP project.
 *   GDSPS (ECCC) 
 
     ```
+    # copied to data/model/hourly/gdsps_eccc.txt
     /fs/site6/eccc/mrd/rpnenv/pwa001/hindcast/SurgeMIP/gdsps_eccc.txt
     ```
 
 *   ADCIRC (ANL)
 
     ```
+    # copied to data/model/hourly/UND_ANL_GlobalADCIRC_barotropic_hourly.csv
     /fs/site6/eccc/mrd/rpnenv/pwa001/hindcast/SurgeMIP/UND_ANL_GlobalADCIRC_barotropic_hourly.csv
     ```
 
