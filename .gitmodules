@@ -2,3 +2,7 @@
 	path = components/loadprogs
 	url = git@gitlab.science.gc.ca:storm-surge-modelling/loadprogs_python.git
 	branch = mod_txt
+[submodule "components/surge_validation"]
+	path = components/surge_validation
+	url = git@gitlab.science.gc.ca:storm-surge-modelling/surge_validation.git
+	branch = surgemip
