@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
+set -e -u 
 export PYTHONPATH=$(pwd)/src:${PYTHONPATH}
 
 # each variable TWL or surge should be evaluated under separate EXP_ID
-export EXP_ID=SURGEMIP_TWL
+export EXP_ID=SURGEMIP_SURGE
 
 . config/${EXP_ID}.cfg
 
@@ -17,7 +18,7 @@ for y in $(seq ${y_beg} ${y_end}); do
 done
 
 
-log_file="surge_validation_twl.log"
-echo "TWL plotting logs in ${log_file}"
-python -u src/surge_validation/experiments/surgemip/twl.py >& ${log_file}
+log_file="surge_validation_surge_${EXP_ID}.log"
+echo "SURGE plotting logs in ${log_file}"
+python -u src/surge_validation/experiments/surgemip/surge.py >& ${log_file}
 
