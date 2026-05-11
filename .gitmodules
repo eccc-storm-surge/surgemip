@@ -1,8 +1,8 @@
 [submodule "components/loadprogs"]
 	path = components/loadprogs
-	url = git@github.com:guziy/loadprogs_python.git
+	url = git@github.com:eccc-storm-surge/loadprogs_python.git
 	branch = mod_txt
 [submodule "components/surge_validation"]
 	path = components/surge_validation
-	url = git@github.com:guziy/surge_validation.git
+	url = git@github.com:eccc-storm-surge/surge_validation.git
 	branch = surgemip
