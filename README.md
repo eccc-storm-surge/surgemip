@@ -6,6 +6,8 @@ Validation of surge models in the SurgeMIP project.
 
 * Period of interest 2013 - 2018
 * Score yearly, a year is defined from January to December
+* Analysis results available here: https://hpfx.science.gc.ca/~olh001/verification/surgemip/
+* Raw observation, model and pre-processed values can be found at: https://hpfx.science.gc.ca/~olh001/verification/surgemip/data/
 
 
 # Input data
