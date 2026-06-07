@@ -2,6 +2,12 @@
 
 Validation of surge models in the SurgeMIP project.
 
+# Cloning the repository
+
+```bash
+git clone git@github.com:eccc-storm-surge/surgemip.git --recurse-submodules
+```
+
 # Details 
 
 * Period of interest 2013 - 2018
