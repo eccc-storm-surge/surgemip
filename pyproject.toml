@@ -20,3 +20,11 @@ surgemip = { path = ".", editable = true }
 
 [tool.pixi.dependencies]
 pandas = ">=3.0.5,<4"
+xarray = ">=2026.7.0,<2027"
+
+
+[tool.pixi.feature.dev.dependencies]
+ipython = "*"
+
+[tool.pixi.environments]
+dev = ["dev"]
