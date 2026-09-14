@@ -17,6 +17,8 @@ platforms = ["linux-64"]
 surgemip = { path = ".", editable = true }
 
 [tool.pixi.tasks]
+twl = "ord_soumet scripts/submit.sh -args ./run_all_twl.sh"
+surge = "ord_soumet scripts/submit.sh -args ./run_all_surge.sh"
 
 [tool.pixi.dependencies]
 pandas = ">=3.0.5,<4"
