@@ -23,14 +23,25 @@ git clone git@github.com:eccc-storm-surge/surgemip.git --recurse-submodules
 
     ```
     # copied to data/model/hourly/gdsps_eccc.txt
-    /fs/site6/eccc/mrd/rpnenv/pwa001/hindcast/SurgeMIP/gdsps_eccc.txt
+    data/model/clean/hourly/gdsps_eccc.txt
     ```
 
 *   ADCIRC (ANL)
 
     ```
     # copied to data/model/hourly/UND_ANL_GlobalADCIRC_barotropic_hourly.csv
-    /fs/site6/eccc/mrd/rpnenv/pwa001/hindcast/SurgeMIP/UND_ANL_GlobalADCIRC_barotropic_hourly.csv
+    data/model/clean/hourly/UND_ANL_GlobalADCIRC_barotropic_hourly.csv
+    ```
+*   Google
+    
+    ```
+    data/model/clean/hourly/google_predictions_50KM.csv
+    ```
+
+*   GTSM
+
+    ```
+    data/model/clean/hourly/gtsm.csv
     ```
 
 ### Daily maxima
@@ -41,6 +52,7 @@ git clone git@github.com:eccc-storm-surge/surgemip.git --recurse-submodules
     data/model/daily_max/JRC_dailyMaxSurgeLevel
     ```
 
+    Note: to do plots for daily maxima we re-use outputs from loadprogs at hourly frequencies.
 
 ## Observations
 
