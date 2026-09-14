@@ -52,6 +52,7 @@ for label in "${!label_to_mod_path[@]}"; do
 
     if [[ "$?" != "0" ]]; then
         echo "Problem with the chunk ${t1} to ${t2} for ${label}, exiting ..."
+        exit 1
     fi
 
     # copy results to the merged file
