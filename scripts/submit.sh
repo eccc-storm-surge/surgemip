@@ -1,4 +1,4 @@
-#ord_soumet= -cpus 256 -t 10800 -jn surgemip-twl -mach moira
+#ord_soumet= -cpus 128 -cm 256G -t 21600 -jn surgemip-twl -mach ppp8
 
 cd  ~/Python/surgemip
 . ~/.profile_python3
