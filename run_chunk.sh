@@ -50,6 +50,10 @@ for label in "${!label_to_mod_path[@]}"; do
 
     python src/loadprogs/experiments/run_experiments_base.py  --cfg  ${loadprogs_cfg} >& ${log_file}
 
+    if [[ "$?" != "0" ]]; then
+        echo "Problem with the chunk ${t1} to ${t2} for ${label}, exiting ..."
+    fi
+
     # copy results to the merged file
     cat ${current_out_dir}/surge_${label}.dat >> ${label_to_merged_loadprogs_outfile[${label}]}
 

@@ -6,7 +6,14 @@ export PYTHONPATH=$(pwd)/src:${PYTHONPATH}
 # each variable TWL or surge should be evaluated under separate EXP_ID
 export EXP_ID=SURGEMIP_SURGE
 
-. config/${EXP_ID}.cfg
+cfg_file=config/${EXP_ID}.cfg
+
+if [ ! -f  ${cfg_file} ]; then
+    echo "Global config file does not exist: ${cfg_file}"
+    exit 1
+else
+    . ${cfg_file}
+fi
 
 
 echo "merged loadprogs output is in: "

@@ -8,7 +8,7 @@ export EXP_ID=SURGEMIP_TWL
 
 cfg_file=config/${EXP_ID}.cfg
 
-if [! -f  ${cfg_file} ]; then
+if [ ! -f  ${cfg_file} ]; then
     echo "Global config file does not exist: ${cfg_file}"
     exit 1
 else
