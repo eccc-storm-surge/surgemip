@@ -10,7 +10,9 @@ export EXP_ID=SURGEMIP_SURGE_DAILYMAX
 recompute_dailymax=0
 
 if (( recompute_dailymax == 1)); then
-    python -u 
+    echo "recomputing daily max surge and twl matches"
+    echo "Cwd: $(pwd)"
+    python -u src/loadprogs/tools/surgemip_prep_daily_max_mod_obs_matches.py
 fi
 
 
