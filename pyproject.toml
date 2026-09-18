@@ -17,8 +17,11 @@ platforms = ["linux-64"]
 surgemip = { path = ".", editable = true }
 
 [tool.pixi.tasks]
-twl = "ord_soumet scripts/submit.sh -jn surgemip-twl -args ./run_all_twl.sh"
+twl = "ord_soumet scripts/submit.sh -jn surgemip-twl -cpus 200 -args ./run_all_twl.sh"
 surge = "ord_soumet scripts/submit.sh -jn surgemip-surge -args ./run_all_surge.sh"
+
+[tool.pixi.tasks.surge_daily_max]
+cmd = "ord_soumet scripts/submit.sh -jn surgemip-surge-dailymax -args ./run_all_surge_dailymax.sh"
 
 [tool.pixi.dependencies]
 pandas = ">=3.0.5,<4"

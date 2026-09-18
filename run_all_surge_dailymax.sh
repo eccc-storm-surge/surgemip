@@ -7,7 +7,7 @@ export PYTHONPATH=$(pwd)/src:${PYTHONPATH}
 export EXP_ID=SURGEMIP_SURGE_DAILYMAX
 
 
-recompute_dailymax=0
+recompute_dailymax=1
 
 if (( recompute_dailymax == 1)); then
     echo "recomputing daily max surge and twl matches"
