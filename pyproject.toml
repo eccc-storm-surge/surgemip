@@ -31,6 +31,7 @@ xarray = ">=2026.7.0,<2027"
 netcdf4 = ">=1.7.4,<2"
 dask = ">=2026.8.0,<2027"
 ipython = ">=9.17.1,<10"
+cartopy = ">=0.26.0,<0.27"
 
 
 [tool.pixi.feature.dev.dependencies]
