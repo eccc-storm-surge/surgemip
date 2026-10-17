@@ -31,7 +31,14 @@ for label in "${!label_to_mod_path[@]}"; do
     loadprogs_cfg=${wrk_dir}/loadprogs_${label}.cfg
 
     log_file=${wrk_dir}/loadprogs_${label}.log
+    
     current_out_dir=${wrk_dir}/output/data_for_scoring_${label}_${t1}_${t2}
+    done_file=${wrk_dir}/output/data_for_scoring_${label}_${t1}_${t2}.done
+
+    # if .done is not there for the chunk the loadprogs needs to be rerun
+    if [ ! -e ${done_file} ]; then
+        rm -rf ${current_out_dir}
+    fi
 
     echo "loadprogs logs for the current chunk in: ${log_file}"
     mkdir -p ${current_out_dir}
@@ -53,6 +60,8 @@ for label in "${!label_to_mod_path[@]}"; do
     if [[ "$?" != "0" ]]; then
         echo "Problem with the chunk ${t1} to ${t2} for ${label}, exiting ..."
         exit 1
+    else
+        touch ${done_file}       
     fi
 
     # copy results to the merged file
