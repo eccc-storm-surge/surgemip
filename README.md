@@ -12,7 +12,7 @@ git clone git@github.com:eccc-storm-surge/surgemip.git --recurse-submodules
 
 * Period of interest 2013 - 2018
 * Score yearly, a year is defined from January to December
-* Analysis results available here: https://hpfx.science.gc.ca/~olh001/verification/surgemip/
+* Analysis results available here: https://hpfx.collab.science.gc.ca/~olh001/verification/surgemip_v001/
 * Raw observation, model and pre-processed values can be found at: https://hpfx.science.gc.ca/~olh001/verification/surgemip/data/
 
 
